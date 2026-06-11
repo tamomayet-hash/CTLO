@@ -5,105 +5,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CTLO - Law Office</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
-
-<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body{
 margin:0;
-font-family: Garamond, serif;
+font-family:'Cormorant Garamond', serif;
 background:#fff;
 color:#111;
 }
 
 .container{
-max-width:420px;
+max-width:460px;
 margin:auto;
-padding:30px 20px;
+padding:40px 22px;
 text-align:center;
 }
 
-.logo{
-width:90px;
-margin-bottom:15px;
+.photo{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #111;
+padding:3px;
+margin-bottom:10px;
 }
 
 .name{
-font-size:24px;
+font-size:26px;
+font-weight:600;
 letter-spacing:1px;
 margin-bottom:5px;
 }
 
 .title{
-font-size:16px;
-margin-bottom:20px;
+font-size:14px;
+letter-spacing:2px;
+text-transform:uppercase;
 color:#444;
+margin-bottom:25px;
+}
+
+.line{
+width:60px;
+height:1px;
+background:#111;
+margin:20px auto;
 }
 
 .actions{
 display:flex;
-justify-content:space-around;
+justify-content:space-between;
 margin:20px 0;
 }
 
 .actions a{
 text-decoration:none;
 color:#111;
-font-size:14px;
+font-size:13px;
+width:33%;
 }
 
 .actions i{
 display:block;
-font-size:20px;
-margin-bottom:5px;
-}
-
-.card{
-border:1px solid #eee;
-border-radius:12px;
-padding:15px;
-margin-top:15px;
-text-align:left;
-}
-
-.card h3{
-font-size:14px;
-margin-bottom:10px;
-letter-spacing:1px;
-}
-
-.item{
-margin:10px 0;
-font-size:14px;
-}
-
-.item a{
-color:#111;
-text-decoration:none;
+font-size:18px;
+margin-bottom:6px;
 }
 
 .add-contact{
 display:block;
 margin:25px 0;
-padding:12px;
+padding:14px;
 border:1px solid #111;
 text-decoration:none;
 color:#111;
-border-radius:8px;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+.add-contact:hover{
+background:#111;
+color:#fff;
+}
+
+.card{
+border-top:1px solid #eee;
+padding:18px 0;
+text-align:left;
+}
+
+.card h3{
+font-size:13px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.item{
+margin:8px 0;
+font-size:15px;
+}
+
+.item a{
+text-decoration:none;
+color:#111;
 }
 
 .social{
 display:flex;
-justify-content:space-around;
-margin-top:20px;
+justify-content:center;
+gap:25px;
+margin-top:25px;
+font-size:18px;
 }
 
 .social a{
 color:#111;
-font-size:20px;
 }
 
 </style>
@@ -113,11 +131,13 @@ font-size:20px;
 
 <div class="container">
 
-<!-- LOGO -->
-<img src="photo.jpg" class="logo">
+<!-- PROFILE PHOTO -->
+<img src="photo.jpg" class="photo">
 
 <div class="name">ATTY. DONNABEL CRISTAL TENORIO</div>
 <div class="title">Lawyer • Cristal Tenorio Law Office</div>
+
+<div class="line"></div>
 
 <!-- QUICK ACTIONS -->
 <div class="actions">
@@ -138,10 +158,10 @@ font-size:20px;
 
 <!-- ADD CONTACT -->
 <a class="add-contact" href="contact.vcf" download>
-+ Add to Contacts
++ SAVE CONTACT
 </a>
 
-<!-- CONTACT INFO -->
+<!-- CONTACT -->
 <div class="card">
 <h3>CONTACT</h3>
 
@@ -149,21 +169,34 @@ font-size:20px;
 <div class="item">Office: <a href="tel:+639917924302">+63 991 7924 302</a></div>
 <div class="item">Office: <a href="tel:+639338124210">+63 933 8124 210</a></div>
 <div class="item">Other: <a href="tel:+639338549529">+63 933 8549 529</a></div>
+</div>
 
-<div class="item">Email: <a href="mailto:cristaltenoriolawoffice@yahoo.com">Yahoo</a></div>
-<div class="item">Email: <a href="mailto:cristaltenoriolawoffice@gmail.com">Gmail</a></div>
+<!-- EMAIL -->
+<div class="card">
+<h3>EMAIL</h3>
+
+<div class="item">Yahoo:
+<a href="mailto:cristaltenoriolawoffice@yahoo.com">
+cristaltenoriolawoffice@yahoo.com
+</a>
+</div>
+
+<div class="item">Gmail:
+<a href="mailto:cristaltenoriolawoffice@gmail.com">
+cristaltenoriolawoffice@gmail.com
+</a>
+</div>
 
 </div>
 
 <!-- SOCIAL -->
 <div class="social">
-<a href="https://www.facebook.com/cristal.tenorio.75" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 
-<a href="https://m.me/cristal.tenorio.75" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
-
-<a href="https://wa.me/639917924302" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
+<a href="https://www.facebook.com/cristal.tenorio.75"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://m.me/cristal.tenorio.75"><i class="fa-brands fa-facebook-messenger"></i></a>
+<a href="https://wa.me/639917924302"><i class="fa-brands fa-whatsapp"></i></a>
 <a href="viber://chat?number=%2B639917924302"><i class="fa-solid fa-phone"></i></a>
+
 </div>
 
 </div>
